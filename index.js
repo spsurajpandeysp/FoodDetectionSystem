@@ -8,8 +8,12 @@ const {foodFindByName} =  require('./controller/food.controller')
 app.use(cors());
 app.use(express.json());
 const {contactUs} =  require('./controller/contactUs.controller')
-
+const path = require('path');
 mongoose.connect(process.env.DATABASE_URL)
+
+
+app.use(express.static(path.resolve(__dirname,process.env.PUBLIC_DIR)));
+
 
 app.get('/fooddata/:foodName',async (req,res)=>{
     console.log("hello")
