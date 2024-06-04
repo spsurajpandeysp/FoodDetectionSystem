@@ -8,6 +8,6 @@
     "routes":[
         {"src":"/","dest":"index.js"},
         {"src":"/fooddata/(.*)","dest":"index.js"},
-        {"src":"/contactus","dest":"index.js"},
+        {"src":"/contactus","dest":"index.js"}
     ]
 }
