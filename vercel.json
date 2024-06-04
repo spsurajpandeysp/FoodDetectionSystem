@@ -1,0 +1,15 @@
+{
+    "version":2,
+    "builds":[
+        {"src":"./index.js","use":"@vercel/node"},
+        {"src":"build/**","use":"@vercel/static"},
+        {"src":"./finalModelPredict.py","use":"@vercel/python","config":{"runtime":"python3.11"}}
+    ],
+    "routes":[
+        {"src":"/findfood","dest":"finalModelPredict.py"},
+        {"src":"/fooddata","dest":"index.js"},
+        {"src":"/contactus","dest":"index.js"},
+        {"src":"/","dest":"build/index.html"},
+        {"src":"/(.+)","dest":"build/$1"}
+    ]
+}
