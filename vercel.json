@@ -6,8 +6,8 @@
     
     ],
     "routes":[
-        {"src":"/fooddata","dest":"index.js"},
-        {"src":"/contactus","dest":"index.js"},
+        {"src":"/fooddata","dest":"./index.js"},
+        {"src":"/contactus","dest":"./index.js"},
         {"src":"/","dest":"build/index.html"},
         {"src":"/(.+)","dest":"build/$1"}
     ]
