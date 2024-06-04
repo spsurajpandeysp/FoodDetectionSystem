@@ -108,5 +108,11 @@ def get_data():
     else:
         return jsonify({'error': 'Failed to retrieve data from external API'}), response.status_code
 
-if __name__ == '__main__':
-    app.run(debug=True, port=4000)
+
+
+@app.route('/', methods=['GET'])
+def get_data():
+    return jsonify({'Name': 'SurajPandey'})
+
+
+
