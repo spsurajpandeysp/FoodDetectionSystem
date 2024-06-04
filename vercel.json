@@ -5,7 +5,7 @@
     ],
     "routes":[
         {"src":"/pandey","dest":"index.js"},
-        {"src":"/fooddata","dest":"index.js"},
+        {"src":"//fooddata/:foodName","dest":"index.js"},
         {"src":"/contactus","dest":"index.js"}
     ]
 }
