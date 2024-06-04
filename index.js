@@ -12,7 +12,7 @@ const path = require('path');
 mongoose.connect(process.env.DATABASE_URL)
 
 
-app.use(express.static(path.resolve(__dirname,process.env.PUBLIC_DIR)));
+// app.use(express.static(path.resolve(__dirname,process.env.PUBLIC_DIR)));
 
 
 app.get('/fooddata/:foodName',async (req,res)=>{
