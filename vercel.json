@@ -2,10 +2,12 @@
     "version":2,
     "builds":[
         {"src":"./index.js","use":"@vercel/node"}
+  
+    
     ],
     "routes":[
-        {"src":"/pandey","dest":"index.js"},
-        {"src":"/fooddata/:foodName","dest":"index.js"},
-        {"src":"/contactus","dest":"index.js"}
+        {"src":"/","dest":"index.js"},
+        {"src":"/fooddata/(.*)","dest":"index.js"},
+        {"src":"/contactus","dest":"index.js"},
     ]
 }
