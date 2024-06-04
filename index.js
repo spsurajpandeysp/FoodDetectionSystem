@@ -14,7 +14,7 @@ mongoose.connect(process.env.DATABASE_URL)
 
 // app.use(express.static(path.resolve(__dirname,process.env.PUBLIC_DIR)));
 
-app.get('/',async (req,res)=>{
+app.get('/pandey',async (req,res)=>{
     console.log("hello")
     res.send("suraj pandeu");
 })
